@@ -1,8 +1,5 @@
-@import "../components/header/header";
-
-@import "../sass/abstracts/variables";
-
-@import "./sass/abstracts/variables";
+@import "./abstracts/variables";
+@import "../components/header/_header.scss";
 
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");

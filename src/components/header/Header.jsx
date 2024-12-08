@@ -1,12 +1,6 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBriefcase, faHouse } from "@fortawesome/free-solid-svg-icons";
-import {
-  faEnvelope,
-  faFile,
-  faUser,
-} from "@fortawesome/free-regular-svg-icons";
-import { FaBeer, FaRegEnvelope } from "react-icons/fa";
+
+import { FaRegEnvelope } from "react-icons/fa";
 import {
   IoBriefcaseOutline,
   IoCloseOutline,
@@ -27,49 +21,49 @@ const Header = () => {
             <ul className="nav__list">
               <li className="nav__list--item">
                 <a href="#home" className="nav__list--link">
-                  <IoHomeOutline />
+                  <IoHomeOutline className="nav__list--icon" />
                   Home
                 </a>
               </li>
               <li className="nav__list--item">
                 <a href="#about" className="nav__list--link">
-                  <CiUser />
+                  <CiUser className="nav__list--icon" />
                   About
                 </a>
               </li>
               <li className="nav__list--item">
                 <a href="skills" className="nav__list--link">
-                  <CiFileOn />
+                  <CiFileOn className="nav__list--icon" />
                   Skills
                 </a>
               </li>
               <li className="nav__list--item">
                 <a href="#services" className="nav__list--link">
-                  <IoBriefcaseOutline />
+                  <IoBriefcaseOutline className="nav__list--icon" />
                   Services
                 </a>
               </li>
               <li className="nav__list--item">
                 <a href="#portfolio" className="nav__list--link">
-                  <CiImageOn />
+                  <CiImageOn className="nav__list--icon" />
                   Portfolio
                 </a>
               </li>
               <li className="nav__list--item">
                 <a href="#contact" className="nav__list--link">
-                  <FaRegEnvelope />
+                  <FaRegEnvelope className="nav__list--icon" />
                   Contact
                 </a>
               </li>
             </ul>
           </div>
           <div className="nav__toggle">
-            <li className="nav__app">
-              <AiOutlineAppstore />
-            </li>
-            <li className="nav__close">
-              <IoCloseOutline />
-            </li>
+            <div className="nav__app">
+              <AiOutlineAppstore className="nav__list--store" />
+            </div>
+            <div className="nav__close">
+              <IoCloseOutline className="nav__list--close" />
+            </div>
           </div>
         </nav>
       </header>
