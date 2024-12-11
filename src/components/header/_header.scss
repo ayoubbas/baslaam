@@ -29,34 +29,66 @@ header {
       display: flex;
       gap: 2rem;
       @media screen and (max-width: 768px) {
-        position: absolute;
+        position: fixed;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         width: 100%;
-        height: 50rem;
-        bottom: 0;
+        left: 0;
+        bottom: 0rem;
+        background-color: $body-color;
+        border-radius: 1rem 1rem 0 0;
+        box-shadow: #00000026 0.1rem 0px 1.2rem 0.3rem;
+        padding: 1rem;
+        transform: translateY(10rem);
+        animation: showHeader .3s ease forwards;
+      }
+      @media screen and (max-width:350px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+        
       }
       &--link {
         font-size: $small-font-size;
         font-weight: $font-medium;
-
         color: $title-color;
         transition: all 0.3s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         &:hover,
         .active-link {
           color: $title-color-dark;
         }
       }
 
-      &--icon {
+      &--icon,
+      &--close {
         display: none;
+        font-size: 1.3rem;
+        transition: all .3s;
+        font-weight: $font-semi-bold;
+        cursor: pointer;
+        @media screen and (max-width: 768px) {
+          display: block;
+        }
+        &:hover{
+          color: $title-color-dark;
+        }
       }
     }
-
     &__toggle {
       display: none;
-      @media screen and (max-width: 768px){
+      @media screen and (max-width: 768px) {
         display: inline-block;
-        
       }
     }
+    &__close {
+      @media screen and (max-width: 768px) {
+      }
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    } 
   }
 }

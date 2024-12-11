@@ -1,0 +1,14 @@
+@keyframes showHeader {
+  0% {
+    transform: 10rem;
+  }
+  80% {
+    transform: -1rem;
+  }
+  100% {
+    transform: 0rem;
+  }
+}
+header{
+    background-color: aquamarine;
+}

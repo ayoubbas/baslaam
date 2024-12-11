@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { FaRegEnvelope } from "react-icons/fa";
 import {
@@ -8,8 +8,10 @@ import {
 } from "react-icons/io5";
 import { CiFileOn, CiImageOn, CiUser } from "react-icons/ci";
 import { AiOutlineAppstore } from "react-icons/ai";
+import { HiOutlineEnvelope } from "react-icons/hi2";
 
 const Header = () => {
+  const [active, setActive] = useState(false);
   return (
     <>
       <header className="header">
@@ -51,18 +53,22 @@ const Header = () => {
               </li>
               <li className="nav__list--item">
                 <a href="#contact" className="nav__list--link">
-                  <FaRegEnvelope className="nav__list--icon" />
+                  <HiOutlineEnvelope className="nav__list--icon" />
                   Contact
                 </a>
               </li>
+            <div className="nav__close">
+              <IoCloseOutline className="nav__list--close " />
+            </div>
             </ul>
           </div>
           <div className="nav__toggle">
             <div className="nav__app">
-              <AiOutlineAppstore className="nav__list--store" />
-            </div>
-            <div className="nav__close">
-              <IoCloseOutline className="nav__list--close" />
+              <AiOutlineAppstore
+                className={`${
+                  active ? "nav__list--icon active-link" : "nav__list--store"
+                }`}
+              />
             </div>
           </div>
         </nav>
