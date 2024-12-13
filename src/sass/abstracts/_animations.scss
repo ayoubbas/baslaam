@@ -1,14 +1,19 @@
 @keyframes showHeader {
   0% {
-    transform: 10rem;
+    transform: translateY(10rem);
   }
   80% {
-    transform: -1rem;
+    transform: translateY(-2rem);
   }
   100% {
-    transform: 0rem;
+    transform: translateY(0rem);
   }
 }
-header{
-    background-color: aquamarine;
+@keyframes hideHeader {
+  0% {
+    transform: translateY(0rem);
+  }
+  100% {
+    transform: translateY(15rem);
+  }
 }
