@@ -1,0 +1,21 @@
+.home__scroll {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &-button {
+    .wheel {
+      animation: scrolldown 0.8s infinite;
+    }
+    .home__scroll-mouse {
+      width: 1.5rem;
+      margin-right: 0.7rem;
+      line-height: 1rem;
+    }
+  }
+
+  .arrow-icon {
+    margin-left:.5rem;
+    animation: scrolldownArrow 1s  ;
+  }
+}

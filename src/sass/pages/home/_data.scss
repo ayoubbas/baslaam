@@ -1,0 +1,36 @@
+.home-data {
+    display: inline-flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    &__name{
+        font-size: $h1-font-size;
+    }
+    &__education{
+        font-size: $h3-font-size;
+        font-weight: $font-normal;
+        padding-left: 5rem;
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 50%;
+            transform: translateY(-50%);
+            width: 4rem;
+            height: .1rem;
+            background-color: #c7c7c7;
+
+        }
+    }
+    &__description{
+        max-width: 25rem;
+    }
+  &__button{
+    display: flex;
+    align-items: center;
+  }
+  &__scroll-name{
+    display: block;
+  }
+  
+}

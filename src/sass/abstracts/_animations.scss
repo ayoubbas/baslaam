@@ -17,3 +17,33 @@
     transform: translateY(15rem);
   }
 }
+
+@keyframes borderImage {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 40% 70% / 50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+}
+
+
+@keyframes scrolldown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(3rem);
+  }
+}
+@keyframes scrolldownArrow {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(.7rem);
+  }
+}

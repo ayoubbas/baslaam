@@ -8,6 +8,7 @@ const Social = () => {
         href="http://www.instagram.com/"
         target="_blank"
         rel="noopener noreferrer"
+        
       >
         <FaInstagram />
       </a>
