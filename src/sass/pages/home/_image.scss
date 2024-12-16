@@ -5,8 +5,21 @@
   background-size: cover;
   box-shadow: inset 0 0 0 9px rgba(255, 255, 255 , 30%);
   order: 1;
-  width: 16rem;
-  height: 16rem;
+  width: 18.75rem;
+  height: 18.75rem;
   justify-self: center;
   animation: borderImage 8s infinite 1s;
+  @media screen and (max-width: 992px) {
+    width: 15.625rem;
+    height: 15.625rem;
+    box-shadow: inset 0 0 0 8px rgba(255, 255, 255 , 30%);
+    
+  }
+  @media screen and (max-width: 768px) {
+    order: initial;
+  
+    width: 12.5rem;
+    height: 12.5rem;
+    box-shadow: inset 0 0 0 6px rgba(255, 255, 255 , 30%);
+}
 }

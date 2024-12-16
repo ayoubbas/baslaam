@@ -14,5 +14,33 @@
     grid-template-columns: 116px repeat(2, 1fr);
     align-items: center;
     column-gap: 2rem;
+    @media screen and (max-width: 992px) {
+      grid-template-columns: 100px repeat(2, 1fr);
+      column-gap: 1.25rem;
+    }
+    @media screen and (max-width: 768px) {
+      display: flex;
+      flex-direction:column;
+      justify-content: center;
+      align-items: center;
+      column-gap: 1.25rem;
+      
+}
   }
 }
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+// @media screen and (max-width: 992px) {
+
+// }
+
+// /* For medium devices */
+// @media screen and (max-width: 768px) {
+
+// }
+
+// /* For small devices */
+// @media screen and (max-width: 350px) {
+
+// }

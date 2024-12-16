@@ -2,7 +2,6 @@ import React from "react";
 import Social from "../../components/Social/Social";
 import Data from "./Data";
 import Image from "./Image";
-import Scroll from "./Scroll";
 
 const Home = () => {
   return (

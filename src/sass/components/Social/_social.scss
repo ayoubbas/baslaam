@@ -3,6 +3,12 @@
   flex-direction: column;
   gap: 1rem;
   font-size: 1.5rem;
+  @media screen and (max-width: 768px) {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    flex-direction: row;
+  }
   & a {
     transition: all 0.5s;
     color: $title-color;

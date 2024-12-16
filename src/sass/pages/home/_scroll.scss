@@ -1,8 +1,12 @@
 .home__scroll {
+  margin-top: 2rem;
   display: flex;
   align-items: center;
   cursor: pointer;
-
+  color: $title-color;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
   &-button {
     .wheel {
       animation: scrolldown 0.8s infinite;
