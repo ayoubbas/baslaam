@@ -30,7 +30,6 @@
   }
 }
 
-
 @keyframes scrolldown {
   0% {
     transform: translateY(0);
@@ -44,6 +43,17 @@
     transform: translateY(0);
   }
   100% {
-    transform: translateY(.7rem);
+    transform: translateY(0.7rem);
+  }
+}
+@keyframes retate {
+  0% {
+    transform: rotate(-30deg);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(-30deg);
   }
 }

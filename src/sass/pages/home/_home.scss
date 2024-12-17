@@ -8,24 +8,25 @@
     height: 100%;
     row-gap: 7rem;
     padding-top: 5.5rem;
+    @media screen and (max-width: 768px) {
+      padding-top: 0;
+    }
   }
   &-content {
-    display: grid;
-    grid-template-columns: 116px repeat(2, 1fr);
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    column-gap: 2rem;
+    
     @media screen and (max-width: 992px) {
-      grid-template-columns: 100px repeat(2, 1fr);
-      column-gap: 1.25rem;
+
     }
     @media screen and (max-width: 768px) {
       display: flex;
-      flex-direction:column;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       column-gap: 1.25rem;
-      
-}
+    }
   }
 }
 

@@ -6,8 +6,8 @@ import Image from "./Image";
 const Home = () => {
   return (
     <section className="home section" id="home">
-      <div className="home__container container grid">
-        <div className="home-content grid">
+      <div className="home__container container ">
+        <div className="home-content">
           <Social />
           <Image />
           <Data />

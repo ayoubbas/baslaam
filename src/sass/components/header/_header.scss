@@ -5,6 +5,7 @@ header {
   left: 0;
   z-index: $z-fixed;
   background-color: $container-color;
+  // padding: 0 1rem;
   @media screen and (max-width: 768px) {
     top: initial;
     bottom: 0;
@@ -14,7 +15,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    column-gap: 1rem;
+    // column-gap: 1rem;
     position: relative;
     @media screen and (max-width: 350px) {
       height: $header-height;
@@ -30,6 +31,7 @@ header {
     }
     &__list {
       display: flex;
+      justify-content: space-between;
       gap: 2rem;
       transition: all 1s;
       @media screen and (max-width: 768px) {
@@ -42,7 +44,7 @@ header {
         background-color: $body-color;
         border-radius: 1rem 1rem 0 0;
         box-shadow: #00000026 0.1rem 0px 1.2rem 0.3rem;
-        padding: 1rem;
+        // padding: 1rem;
         transform: translateY(10rem);
         &.active {
           animation: showHeader 0.7s ease-out forwards;
