@@ -1,4 +1,5 @@
 @import "./abstracts/variables";
+@import "./abstracts/mixins";
 @import "./base/base";
 @import "./base/animations";
 @import "./base/utilities";
@@ -127,43 +128,58 @@ img {
 }
 
 /*=============== BREAKPOINTS ===============*/
-/* For large devices */
-@media screen and (max-width: 992px) {
-  .container {
-    margin: 0 4rem 0 4rem;
-  }
+// /* For large devices */
+// @media screen and (max-width: 992px) {
+//   .container {
+//     margin: 0 4rem 0 4rem;
+//   }
 
-  .button {
-    padding: 1rem 1.75rem;
-  }
+//   .button {
+//     padding: 1rem 1.75rem;
+//   }
 
-  .button__icon {
-    width: 2.2rem;
-    height: 2.2rem;
-  }
+//   .button__icon {
+//     width: 2.2rem;
+//     height: 2.2rem;
+//   }
+// }
+
+// /* For medium devices */
+// @media screen and (max-width: 768px) {
+//   body {
+//     margin: 0 0 $header-height 0;
+//   }
+
+//   .section {
+//     // padding: 2rem 0 4rem;
+
+//     &__subtitle {
+//       margin-bottom: $mb-4-8;
+//     }
+//   }
+// }
+
+// /* For small devices */
+// @media screen and (max-width: 350px) {
+//   $big-font-size: 2.25rem;
+
+//   // .container {
+//   //   margin-left: $mb-1;
+//   //   margin-right: $mb-1;
+//   // }
+// }
+/*
+@include respond(phone){
+  
+}
+@include respond(tab-port){
+
+}
+@include respond(tab-land){
+
+}
+@include respond(big-desktop){
+
 }
 
-/* For medium devices */
-@media screen and (max-width: 768px) {
-  body {
-    margin: 0 0 $header-height 0;
-  }
-
-  .section {
-    // padding: 2rem 0 4rem;
-
-    &__subtitle {
-      margin-bottom: $mb-4-8;
-    }
-  }
-}
-
-/* For small devices */
-@media screen and (max-width: 350px) {
-  $big-font-size: 2.25rem;
-
-  // .container {
-  //   margin-left: $mb-1;
-  //   margin-right: $mb-1;
-  // }
-}
+*/
