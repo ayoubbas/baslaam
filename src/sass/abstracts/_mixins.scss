@@ -13,7 +13,7 @@ $breakpoint argument choices:
         @media (max-width : 37.5em){@content};
     }
     @if $breakpoint == tab-port {
-        @media (max-width : 56.25em){@content};
+        @media (max-width : 48em){@content};
     }
     @if $breakpoint == tab-land {
         @media (max-width : 75em){@content};
@@ -22,3 +22,17 @@ $breakpoint argument choices:
         @media (max-width :112.5em ){@content};
     }
 }
+
+@mixin container {
+    width: 100%;
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $container-padding;
+    padding-right: $container-padding;
+    
+    @media (max-width:max-width){
+            padding-left: $container-padding;
+            padding-right: $container-padding;
+        }
+    }

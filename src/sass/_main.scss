@@ -69,7 +69,7 @@ img {
 
 /*=============== REUSABLE SASS CLASSES ===============*/
 .section {
-  // padding: 2rem;
+  // padding: 4rem;
 
   &__title {
     font-size: $h1-font-size;
@@ -87,9 +87,7 @@ img {
 
 /*=============== LAYOUT ===============*/
 .container {
-  overflow: hidden;
-  max-width: 968px;
-  margin: 0 auto;
+  @include container
 }
 
 .grid {
