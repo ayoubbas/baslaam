@@ -1,6 +1,9 @@
 .home {
   background-color: $container-color;
   height: 100vh;
+  @include respond(tab-port){
+    height: auto;
+  }
   width: 100%;
   padding-top: calc($header-height + 1.5rem);
   &__container {
