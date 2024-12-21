@@ -1,5 +1,5 @@
 import React from "react";
-import Scroll from "./Scroll";
+import Scroll from "../scroll/Scroll";
 
 const Data = () => {
   return (

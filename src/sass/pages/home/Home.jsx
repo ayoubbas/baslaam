@@ -1,7 +1,7 @@
 import React from "react";
+import Data from "../../components/data-home/Data"
 import Social from "../../components/Social/Social";
-import Data from "./Data";
-import Image from "./Image";
+import Image from "../../components/image-home/Image";
 
 const Home = () => {
   return (

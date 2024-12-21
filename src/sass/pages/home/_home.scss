@@ -7,18 +7,17 @@
     position: relative;
     width: 100%;
     height: 100%;
-    row-gap: 7rem;
-    padding-top: 5.5rem;
+    // row-gap: 7rem;
     @include respond(tab-port) {
       padding-top: 0;
     }
   }
   &-content {
     // max-width: 992px;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     
     @include respond(tab-port) {
       display: flex;

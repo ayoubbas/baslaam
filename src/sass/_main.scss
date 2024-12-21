@@ -6,9 +6,9 @@
 @import "./components/header/_header.scss";
 @import "./components/Social/social";
 @import "./pages/home/home";
-@import "./pages/home/data";
-@import "./pages/home/image";
-@import "./pages/home/scroll";
+@import "./components/data-home/data";
+@import "./components/image-home/image";
+@import "./components/scroll/scroll";
 
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");

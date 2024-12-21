@@ -1,15 +1,26 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html {
-    scroll-behavior: smooth;
-    font-size: 62.5%;  //1rem = 16px
-    @include respond(phone)      {font-size:50%;}
-    @include respond(tab-port)   {font-size:60%;}
-    @include respond(tab-land)   {font-size:70%;}
-    @include respond(big-desktop){font-size:80%;}
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%; //1rem = 16px
+  @include respond(big-desktop) {
+    background-color: blue;
+    font-size: 80%;
   }
+  @include respond(tab-land) {
+    background-color: green;
+    font-size: 70%;
+  }
+  @include respond(tab-port) {
+    background-color: yellow;
+    font-size: 60%;
+  }
+  @include respond(phone) {
+    background-color: red;
+    font-size: 50%;
+  }
+}
