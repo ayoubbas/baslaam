@@ -10,7 +10,8 @@ header {
   @include respond(tab-port){
     top: initial;
     bottom: 0;
-    
+    padding: 2rem 0;
+    background-color: yellow;
   }
   .nav {
     height: calc($header-height + 1.5rem);
@@ -26,7 +27,7 @@ header {
       color: $title-color;
       transition: all 0.3s;
       font-weight: $font-semi-bold;
-      font-size: $h3-font-size;
+      font-size: $h1-font-size;
       &:hover {
         color: $title-color-dark;
       }
@@ -51,13 +52,10 @@ header {
           animation: showHeader 0.7s ease-out forwards;
         }
         &.close {
-
-          // transform: translateY(20rem);
           animation: hideHeader 0.5s ease-in-out forwards;
         }
       }
       @include respond(phone) {
-        // transform: translateY(15rem);
         display: grid;
         grid-template-columns: repeat(2, 1fr);
       }
@@ -78,7 +76,7 @@ header {
       &--icon,
       &--close {
         display: none;
-        font-size: 2rem;
+        font-size: 3rem;
         transition: all 0.3s;
         font-weight: $font-semi-bold;
         cursor: pointer;
@@ -97,7 +95,8 @@ header {
       }
     }
     &__app {
-      font-size: 2.5rem;
+      font-size: 4rem;
+      line-height: 1.7rem;
       transition: all 0.3s;
       font-weight: $font-semi-bold;
       cursor: pointer;
@@ -106,8 +105,6 @@ header {
       }
     }
     &__close {
-      @include respond(tab-port) {
-      }
       position: absolute;
       top: 1rem;
       right: 1rem;
