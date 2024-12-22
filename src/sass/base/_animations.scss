@@ -1,9 +1,9 @@
 @keyframes showHeader {
   0% {
-    transform: translateY(10rem);
+    transform: translateY(40rem);
   }
   80% {
-    transform: translateY(-2rem);
+    transform: translateY(-6rem);
   }
   100% {
     transform: translateY(0rem);
@@ -14,7 +14,7 @@
     transform: translateY(0rem);
   }
   100% {
-    transform: translateY(20rem);
+    transform: translateY(40rem);
   }
 }
 

@@ -41,15 +41,16 @@ header {
         position: fixed;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        gap: 4rem;
         width: 100%;
         left: 0;
         bottom: 0;
         background-color: $body-color;
         border-radius: 1rem 1rem 0 0;
         box-shadow: #00000026 0.1rem 0px 1.2rem 0.3rem;
-        padding: 2rem;
+        padding: 5rem 2rem ;
         &.active {
-          animation: showHeader 0.7s ease-out forwards;
+          animation: showHeader 0.5s ease-out forwards;
         }
         &.close {
           animation: hideHeader 0.5s ease-in-out forwards;
@@ -60,8 +61,8 @@ header {
         grid-template-columns: repeat(2, 1fr);
       }
       &--link {
-        font-size: $small-font-size;
-        font-weight: $font-medium;
+        font-size: $normal-font-size;
+        font-weight: $font-normal;
         color: $title-color;
         transition: all 0.3s;
         display: flex;
@@ -106,8 +107,8 @@ header {
     }
     &__close {
       position: absolute;
-      top: 1rem;
-      right: 1rem;
+      top: 1.5rem;
+      right: 1.5rem;
     }
   }
 }

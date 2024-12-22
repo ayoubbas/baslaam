@@ -63,9 +63,8 @@ const Data = () => {
         dedicated to my work.
       </p>
       <a href="#contact" className="button home-data__button">
-        Say Hello
-        <IoIosSend />
-
+        <span>Say Hello</span>
+        <IoIosSend className="icon-send" />
       </a>
 
       <Scroll />
