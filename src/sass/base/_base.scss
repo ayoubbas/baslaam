@@ -19,4 +19,7 @@ html {
   @include respond(phone) {
     font-size: 50%;
   }
+  @include respond(small-phone) { 
+    font-size: 45%;
+  }
 }

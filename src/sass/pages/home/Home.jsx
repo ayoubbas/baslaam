@@ -1,6 +1,6 @@
 import React from "react";
-import Data from "../../components/data-home/Data"
-import Social from "../../components/Social/Social";
+import Data from "../../components/home-comps/data-home/Data"
+import Social from "../../components/home-comps/Social/Social";
 import Image from "../../components/home-comps/image-home/Image";
 
 const Home = () => {

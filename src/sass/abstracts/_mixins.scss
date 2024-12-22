@@ -22,7 +22,13 @@ $breakpoint argument choices:
 //     };
 // }
 @mixin respond($breakpoint) {
-  @if $breakpoint == phone {
+  @if $breakpoint == small-phone {
+    @media (max-width: 25em) {
+      // 400px and above
+      @content;
+    }
+  }
+  @else if $breakpoint == phone {
     @media (max-width: 37.5em) {
       // Up to 600px
       @content;
