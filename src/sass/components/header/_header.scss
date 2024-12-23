@@ -5,14 +5,16 @@ header {
   left: 0;
   z-index: $z-fixed;
   background-color: $container-color;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+  
   // padding: 0 1rem;
   
   @include respond(tab-port){
     top: initial;
     bottom: 0;
     padding: 2rem 0;
+    box-shadow:4px 0px 8px rgba(0, 0, 0, 0.1);
   }
   .nav {
     height: calc($header-height + 1.5rem);
