@@ -76,9 +76,14 @@
     span{
       padding-right: 1rem;
     }
+
     .icon-send {
       line-height: 2rem;
       font-size: 3rem;
+      transition:all .3s
+    }
+    &:hover .icon-send{
+      transform: rotate(45deg);
     }
     @include respond(tab-port){
       font-size: 3rem;

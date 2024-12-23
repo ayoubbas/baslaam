@@ -38,6 +38,7 @@
     transform: translateY(3rem);
   }
 }
+
 @keyframes scrolldownArrow {
   0% {
     transform: translateY(0);
@@ -46,6 +47,8 @@
     transform: translateY(0.7rem);
   }
 }
+
+// rotate the hand of name
 @keyframes retate {
   0% {
     transform: rotate(-30deg);
@@ -55,5 +58,17 @@
   }
   100% {
     transform: rotate(-30deg);
+  }
+}
+
+//for showing social  media
+@keyframes showSocial {
+  0% {
+    transform: translateY(-20rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
   }
 }
