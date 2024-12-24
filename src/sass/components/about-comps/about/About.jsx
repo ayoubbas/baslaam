@@ -2,7 +2,7 @@ import React from "react";
 import { FaUser, FaFolder, FaHeadset } from "react-icons/fa";
 const About = () => {
   return (
-    <section className="about section">
+    <section id="about" className="about section">
       <div className="container">
         <div className="title">
           <h1 className="section__title">About Me</h1>
@@ -15,19 +15,19 @@ const About = () => {
             <div className="about__content--data-stats">
               {/* stat */}
               <div className="about__content--data-stats-stat">
-                <FaUser />
+                <FaUser className="about-icon" />
                 <h3 className="about__content--data-stats-stat-title">Experience</h3>
                 <p className="about__content--data-stats-stat-subtitle">2 Years Working</p>
               </div>
               {/* stat */}
               <div className="about__content--data-stats-stat">
-                <FaFolder />
+                <FaFolder className="about-icon" />
                 <h3 className="about__content--data-stats-stat-title">Completed</h3>
                 <p className="about__content--data-stats-stat-subtitle">48 + Projects</p>
               </div>
               {/* stat */}
               <div className="about__content--data-stats-stat">
-                <FaHeadset />
+                <FaHeadset className="about-icon" />
                 <h3 className="about__content--data-stats-stat-title">Support</h3>
                 <p className="about__content--data-stats-stat-subtitle">Online 24/7</p>
               </div>

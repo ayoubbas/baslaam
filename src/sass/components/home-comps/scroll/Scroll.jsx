@@ -38,10 +38,9 @@ const Scroll = () => {
             }}
           />
         </svg>
+        <span className="home__scroll-name">Scroll Down</span>
+        <FaArrowDown className="arrow-icon" />
       </a>
-      <span className="home__scroll-name">Scroll Down 
-      </span>
-      <FaArrowDown className="arrow-icon"/>
     </div>
   );
 };
