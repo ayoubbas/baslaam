@@ -1,9 +1,9 @@
 .about {
+    background-color: yellow;
   &__content {
     display: flex;
     justify-content: space-between;
     gap: 5rem;
-
     width: 100%;
     &--image {
       width: 30%;
