@@ -1,15 +1,50 @@
 import React from "react";
-
+import { FaUser, FaFolder, FaHeadset } from "react-icons/fa";
 const About = () => {
   return (
     <section className="about section">
       <div className="container">
         <div className="title">
-            <h1 className="section__title">About Me</h1>
-            <p className="section__description">My Introduction</p>
-
+          <h1 className="section__title">About Me</h1>
+          <p className="section__subtitle">My Introduction</p>
         </div>
-            
+        <div className="about__content">
+          <div className="about__content--image"></div>
+          <div className="about__content--data">
+            {/* staaaaaaaaaaaaaaats */}
+            <div className="about__content--data-stats">
+              {/* stat */}
+              <div className="about__content--data-stats-stat">
+                <FaUser />
+                <h3 className="about__content--data-stats-stat-title">Experience</h3>
+                <p className="about__content--data-stats-stat-subtitle">2 Years Working</p>
+              </div>
+              {/* stat */}
+              <div className="about__content--data-stats-stat">
+                <FaFolder />
+                <h3 className="about__content--data-stats-stat-title">Completed</h3>
+                <p className="about__content--data-stats-stat-subtitle">48 + Projects</p>
+              </div>
+              {/* stat */}
+              <div className="about__content--data-stats-stat">
+                <FaHeadset />
+                <h3 className="about__content--data-stats-stat-title">Support</h3>
+                <p className="about__content--data-stats-stat-subtitle">Online 24/7</p>
+              </div>
+            </div>
+
+            {/* description */}
+            <p className="about__content--data-description">
+              Frontend developer, I create web pages with UI / UX user
+              interface, I have years of experience and many clients are happy
+              with the projects carried out.
+            </p>
+            {/* download cvv */}
+            <a href={require("../../../assets/John-Cv.pdf")} download className="button">
+              Download my cv
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );

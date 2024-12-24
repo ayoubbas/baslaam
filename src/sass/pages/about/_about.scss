@@ -1,0 +1,42 @@
+.about {
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    width: 100%;
+    &--image {
+      width: 30%;
+      background-image: url(../../../assets/profile.jpg);
+      background-size: cover;
+      background-position: center;
+      border-radius: 2rem;
+    }
+    &--data {
+      width: 50%;
+      &-stats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        &-stat {
+          border: 0.1rem solid $border-color;
+          border-radius: 1rem;
+          padding:2rem 1.5rem ;
+          text-align: center;
+          &-title{
+            font-size: 2rem;
+
+          }
+          &-subtitle{
+            font-size: 1.4rem;
+
+          }
+        }
+      }
+      &-description{
+        margin: 3rem 0;
+        font-size: 1.6rem;
+      }
+
+    }
+  }
+}

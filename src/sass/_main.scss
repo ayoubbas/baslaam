@@ -71,6 +71,7 @@ img {
 /*=============== REUSABLE SASS CLASSES ===============*/
 .section {
   padding:  4rem 0;
+  background-color: $body-color;
 
   &__title {
     font-size: $h1-font-size;
