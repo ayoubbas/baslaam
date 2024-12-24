@@ -1,11 +1,10 @@
 .home {
   background-color: $container-color;
   height: 100vh;
-  @include respond(tab-port){
+  @include respond(tab-port) {
     height: auto;
   }
   width: 100%;
-  padding-top: calc($header-height + 1.5rem);
   &__container {
     position: relative;
     width: 100%;
@@ -16,6 +15,8 @@
     }
   }
   &-content {
+    padding-top: calc($header-height + 1.5rem);
+
     height: 100%;
     width: 100%;
     display: flex;
@@ -23,8 +24,8 @@
     align-items: center;
     @include respond(tab-port) {
       flex-direction: column;
-      
-      justify-content:  left;
+
+      justify-content: left;
       align-items: left;
       column-gap: 1.25rem;
     }
