@@ -40,7 +40,7 @@ const About = () => {
               with the projects carried out.
             </p>
             {/* download cvv */}
-            <a href={require("../../../assets/John-Cv.pdf")} download className="button">
+            <a href={require("../../../../assets/John-Cv.pdf")} download className="button">
               Download my cv
             </a>
           </div>

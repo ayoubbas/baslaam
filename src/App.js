@@ -1,7 +1,8 @@
 import Header from "./sass/components/header/Header";
 import "./sass/_main.scss";
 import Home from "./sass/pages/home/Home";
-import About from "./sass/pages/about/About";
+import About from "./sass/components/about/about/About";
+import Skills from "./sass/components/skills/Skills";
 
 function App() {
   return (
@@ -9,7 +10,8 @@ function App() {
       <Header />
       <main className="main">
         <Home />
-        <About/>
+        <About />
+        <Skills />
       </main>
     </div>
   );
