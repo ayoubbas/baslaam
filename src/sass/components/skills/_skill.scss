@@ -1,0 +1,43 @@
+.skills {
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    &--frontend,
+    &--backend {
+      text-align: center;
+      border: 0.1rem solid $border-color;
+      border-radius: 2rem;
+    }
+  }
+  &-lists {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+
+  }
+  &-list{
+
+  }
+  .skill{
+    &-name{
+        font-size: 2rem;
+        color: $title-color;
+        font-weight: 700;
+    }
+    &-level{
+        font-size: 1.4rem;
+    }
+  }
+  &-icon{
+    margin-right: 1rem;
+    font-size: 2.2rem;
+    color: $title-color;
+
+  }
+  &-item{
+    display:flex;
+    text-align: left;
+  }
+  
+}
