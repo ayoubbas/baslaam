@@ -12,6 +12,7 @@
 @import "./components/about/about/about";
 @import "./components/about/about/about";
 @import "./components/skills/skill";
+@import "./components/services/services";
 
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
@@ -79,7 +80,9 @@ img {
     
   }
   background-color: $body-color;
-
+.title{
+  margin-bottom: 8rem;
+}
   &__title {
     font-size: $h1-font-size;
     color: $title-color;
