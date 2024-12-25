@@ -4,11 +4,11 @@
   &__list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 22rem);
+    grid-template-rows: repeat(2, 20rem);
     gap: 2rem;
     @include respond(tab-port){
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 22rem);
+        grid-template-rows: repeat(3, 20rem);
         
     }
     @include respond(phone){
@@ -36,7 +36,7 @@
       }
       &-title {
         font-size: $normal-font-size;
-        margin: 1rem 0;
+        margin: .5rem 0;
         font-weight: bold;
       }
       &-subtitle {

@@ -54,8 +54,8 @@ const Services = () => {
     <section id="services" className="services section">
       <div className="container">
         <div className="title">
-          <h1 className="section-title">Services</h1>
-          <p className="section-subtitle">What i offer</p>
+          <h1 className="section__title">Services</h1>
+          <p className="section__subtitle">What i offer</p>
         </div>
         <div className="services__list">
           {services.map((service, ind) => (

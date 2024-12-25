@@ -4,6 +4,7 @@ import Home from "./sass/pages/home/Home";
 import About from "./sass/components/about/about/About";
 import Skills from "./sass/components/skills/Skills";
 import Services from "./sass/components/services/Services";
+import Portfolio from "./sass/components/portfolio/Portfolio";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <About />
         <Skills />
         <Services />
+        <Portfolio />
       </main>
     </div>
   );
