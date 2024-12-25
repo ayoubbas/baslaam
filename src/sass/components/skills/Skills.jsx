@@ -1,5 +1,5 @@
 import React from "react";
-import { HiBadgeCheck } from "react-icons/hi";
+import { GrValidate } from "react-icons/gr";
 
 const Skills = () => {
   return (
@@ -15,14 +15,14 @@ const Skills = () => {
             <div className="skills-lists">
               <ul className="skills-list">
                 <li className="skills-item">
-                  <HiBadgeCheck className="skills-icon" />
+                  <GrValidate className="skills-icon" />
                   <div className="skill-title">
                     <p className="skill-name">HTML</p>
                     <p className="skill-level">Basic</p>
                   </div>
                 </li>
                 <li className="skills-item">
-                  <HiBadgeCheck className="skills-icon" />
+                  <GrValidate className="skills-icon" />
 
                   <div className="skill-title">
                     <p className="skill-name">CSS</p>
@@ -30,7 +30,7 @@ const Skills = () => {
                   </div>
                 </li>
                 <li className="skills-item">
-                  <HiBadgeCheck className="skills-icon" />
+                  <GrValidate className="skills-icon" />
                   <div className="skill-title">
                     <p className="skill-name">JavaScript</p>
                     <p className="skill-level">Intermediate</p>
@@ -39,21 +39,21 @@ const Skills = () => {
               </ul>
               <ul className="skills-list">
                 <li className="skills-item">
-                  <HiBadgeCheck className="skills-icon" />
+                  <GrValidate className="skills-icon" />
                   <div className="skill-title">
                     <p className="skill-name">Bootstrap</p>
                     <p className="skill-level">Intermediate</p>
                   </div>
                 </li>
                 <li className="skills-item">
-                  <HiBadgeCheck className="skills-icon" />
+                  <GrValidate className="skills-icon" />
                   <div className="skill-title">
                     <p className="skill-name">Git</p>
                     <p className="skill-level">Intermediate</p>
                   </div>
                 </li>
                 <li className="skills-item">
-                  <HiBadgeCheck className="skills-icon" />
+                  <GrValidate className="skills-icon" />
                   <div className="skill-title">
                     <p className="skill-name">React</p>
                     <p className="skill-level">Intermediate</p>
@@ -64,6 +64,55 @@ const Skills = () => {
           </div>
           <div className="skills__content--backend">
             <h2 className="skills__title">Backend developer</h2>
+            <div className="skills-lists">
+              <ul className="skills-list">
+                <li className="skills-item">
+                  <GrValidate className="skills-icon" />
+                  <div className="skill-title">
+                    <p className="skill-name">PHP</p>
+                    <p className="skill-level">Intermediate</p>
+                  </div>
+                </li>
+                <li className="skills-item">
+                  <GrValidate className="skills-icon" />
+
+                  <div className="skill-title">
+                    <p className="skill-name">Node Js</p>
+                    <p className="skill-level">Basic</p>
+                  </div>
+                </li>
+                <li className="skills-item">
+                  <GrValidate className="skills-icon" />
+                  <div className="skill-title">
+                    <p className="skill-name">Python</p>
+                    <p className="skill-level">Intermediate</p>
+                  </div>
+                </li>
+              </ul>
+              <ul className="skills-list">
+                <li className="skills-item">
+                  <GrValidate className="skills-icon" />
+                  <div className="skill-title">
+                    <p className="skill-name">MySQL</p>
+                    <p className="skill-level">Intermediate</p>
+                  </div>
+                </li>
+                <li className="skills-item">
+                  <GrValidate className="skills-icon" />
+                  <div className="skill-title">
+                    <p className="skill-name">Firebase</p>
+                    <p className="skill-level">Intermediate</p>
+                  </div>
+                </li>
+                {/* <li className="skills-item">
+                  <GrValidate  className="skills-icon" />
+                  <div className="skill-title">
+                    <p className="skill-name">React</p>
+                    <p className="skill-level">Intermediate</p>
+                  </div>
+                </li> */}
+              </ul>
+            </div>
           </div>
         </div>
       </div>
