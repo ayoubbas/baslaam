@@ -9,20 +9,30 @@ const projects = [
     title: "Portfolio Website",
     category: "UI/UX",
     tags: ["React", "CSS"],
+    image: work1,
   },
   {
     id: 2,
     title: "E-commerce Platform",
     category: "Web Apps",
     tags: ["React", "API"],
+    image: work2,
   },
   {
     id: 3,
     title: "Admin Dashboard",
     category: "Web Apps",
     tags: ["Vue", "TailwindCSS"],
+    image: work3,
   },
-  { id: 4, title: "Blog CMS", category: "UI/UX", tags: ["Next.js", "SEO"] },
+
+  {
+    id: 4,
+    title: "Blog CMS",
+    category: "UI/UX",
+    tags: ["Next.js", "SEO"],
+    image: work4,
+  },
 ];
 
 const categories = ["All", "UI/UX", "Web Apps", "E-commerce"];
@@ -60,7 +70,7 @@ const ProjectSection = () => {
         <div className="projects__grid">
           {filteredProjects.map((project) => (
             <div key={project.id} className="projects__grid--card">
-              <img src={work1} alt={project.title} />
+              <img src={project.image} alt={project.title} />
               <div className="card-body">
                 <h3>{project.title}</h3>
                 <p>Category: {project.category}</p>

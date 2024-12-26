@@ -75,12 +75,12 @@ img {
 /*=============== REUSABLE SASS CLASSES ===============*/
 .section {
   padding: 6rem 0;
+  background-color: $container-color;
   @include respond(tab-port) {
     // margin: 10rem 0;
     padding: 10rem 0;
     
   }
-  background-color: $body-color;
 .title{
   margin-bottom: 8rem;
 }
