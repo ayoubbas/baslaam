@@ -14,6 +14,7 @@
 @import "./components/skills/skill";
 @import "./components/services/services";
 @import "./components/portfolio/portfolio";
+@import "./components/testemotional/testemotional";
 
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
@@ -79,11 +80,10 @@ img {
   @include respond(tab-port) {
     // margin: 10rem 0;
     padding: 10rem 0;
-    
   }
-.title{
-  margin-bottom: 8rem;
-}
+  .title {
+    margin-bottom: 8rem;
+  }
   &__title {
     font-size: $h1-font-size;
     color: $title-color;

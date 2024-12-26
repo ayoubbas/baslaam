@@ -48,7 +48,7 @@ const ProjectSection = () => {
   return (
     <div className="projects">
       <div className="container">
-        <div className="projects__header">
+        <div className="title">
           <h2 className="section__title">My Projects</h2>
           <p className="section__subtitle">
             Explore some of the work I’ve done for clients and personal growth.
