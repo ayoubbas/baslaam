@@ -1,5 +1,8 @@
 import React from "react";
 import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Card from "./Card";
 
 const testimonials = [
   {
@@ -29,11 +32,20 @@ const Testemotional = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slideToShow: 1,
-    slideToScroll: 1,
+    slidesToShow: 2,
+    slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    arrows: false,
+    arrows: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
     <section className="testemotional section">
@@ -42,15 +54,11 @@ const Testemotional = () => {
           <h1 className="section__title">Testimonial</h1>
           <p className="section__subtitle">My clients say</p>
         </div>
-        <Slider {...sittings}>
-            {testimonials.map((testemotional)=>(
-                <div className="testemotional-card">
-                    <p className="testemotional-text">{testemotional.testemotional}</p>
-                    <h3 className="testemotional-name">{testemotional.name}</h3>
-                    <p className="testemotional-role">{testemotional.role}</p>
-                </div>
-            ))}
-        </Slider>
+        {/* <Slider {...sittings}> */}
+        {testimonials.map((emotion) => (
+          <Card emotion={emotion} />
+        ))}
+        {/* </Slider> */}
       </div>
     </section>
   );

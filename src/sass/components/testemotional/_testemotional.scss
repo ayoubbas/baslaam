@@ -1,0 +1,19 @@
+.testemotional{
+
+    margin: 0 1rem;
+    background-color: yellow;
+    &-card{
+        text-align:center;
+        padding: 2rem;
+        border-radius: 1rem;
+        border: .1rem solid $border-color;
+        height: 20rem;
+    }
+}
+
+.slick-track{
+    display:flex;
+    gap:2rem;
+}
+
+// .slick
