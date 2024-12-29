@@ -3,10 +3,14 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Card from "./Card";
+import img1 from "../../../assets/testimonial1.png";
+import img2 from "../../../assets/testimonial2.png";
+import img3 from "../../../assets/testimonial3.png";
 
 const testimonials = [
   {
     id: 1,
+    image: img1,
     name: "John Doe",
     role: "Web Developer",
     testemotional:
@@ -14,6 +18,7 @@ const testimonials = [
   },
   {
     id: 2,
+    image: img2,
     name: "Jane Smith",
     role: "Designer",
     testemotional:
@@ -21,6 +26,7 @@ const testimonials = [
   },
   {
     id: 3,
+    image: img3,
     name: "Sam Wilson",
     role: "Product Manager",
     testemotional:
@@ -54,11 +60,13 @@ const Testemotional = () => {
           <h1 className="section__title">Testimonial</h1>
           <p className="section__subtitle">My clients say</p>
         </div>
-        {/* <Slider {...sittings}> */}
-        {testimonials.map((emotion) => (
-          <Card emotion={emotion} />
-        ))}
-        {/* </Slider> */}
+        <Slider {...sittings}>
+          {/* <div className="testemotional-cards"> */}
+            {testimonials.map((emotion) => (
+              <Card key={emotion.id} emotion={emotion} />
+            ))}
+          {/* </div> */}
+        </Slider>
       </div>
     </section>
   );
