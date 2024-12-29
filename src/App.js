@@ -6,6 +6,7 @@ import Skills from "./sass/components/skills/Skills";
 import Services from "./sass/components/services/Services";
 import Portfolio from "./sass/components/portfolio/Portfolio";
 import Testemotional from "./sass/components/testemotional/Testemotional";
+import Contact from "./sass/components/contact/Contact";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Services />
         <Portfolio />
         <Testemotional/>
+        <Contact />
       </main>
     </div>
   );
