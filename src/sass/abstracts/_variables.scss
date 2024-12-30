@@ -9,7 +9,8 @@ $title-color: hsl($hue, $sat, 30%);
 $title-color-dark: hsl($hue, $sat, 0%);
 $text-color: hsl($hue, $sat, 46%);
 $body-color: hsl($hue, $sat, 98%);
-$container-color: #fff;
+$container-color: hsl($hue, $sat, 98%);
+$container-color-light : #fff;
 $border-color: #bdbcbe;
 /*========== Font and typography ==========*/
 $body-font: "Poppins", sans-serif;

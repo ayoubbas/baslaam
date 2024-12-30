@@ -33,6 +33,7 @@
             grid-template-columns: repeat(3, 1fr);
             gap: 1rem;
             &-stat {
+              background-color: $container-color-light;
                 border: 0.1rem solid $border-color;
                 border-radius: 1rem;
                 padding: 2rem 1.5rem;

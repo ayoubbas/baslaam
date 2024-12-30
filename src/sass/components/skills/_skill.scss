@@ -11,6 +11,7 @@
     }
     &--frontend,
     &--backend {
+      background-color: $container-color-light;
       text-align: center;
       border: 0.1rem solid $border-color;
       border-radius: 2rem;

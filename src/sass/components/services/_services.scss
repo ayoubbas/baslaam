@@ -21,6 +21,7 @@
       border-radius: 1rem;
       padding: 1rem;
       transition: all 0.3s;
+      background-color: $container-color-light;
       &:hover {
         transform: scale(1.05) rotate(1deg);
         // border-color: $title-color-dark;
