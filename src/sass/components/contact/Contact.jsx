@@ -23,8 +23,8 @@ const Contact = () => {
                 <BsFillEnvelopeAtFill className="item-icon" />
                 <h2>Email</h2>
                 <p>user@gmail.com</p>
-                <a href="examplemail@gmail.com">
-                  Write me <FaArrowRightLong />
+                <a href="examplemail@gmail.com" target="__blank">
+                  Write me <FaArrowRightLong className="link-icon" />
                 </a>
               </div>
               <div className="contact__cards--talk-content-item">
@@ -33,8 +33,8 @@ const Contact = () => {
 
                 <h2>Whatsapp</h2>
                 <p>0672397065</p>
-                <a href="https://api.whatsapp.com/send?phone=+212672397065&text=Hello,%20more%20information">
-                  Write me <FaArrowRightLong />
+                <a  target="__blank" href="https://api.whatsapp.com/send?phone=+212672397065&text=Hello,%20more%20information">
+                  Write me <FaArrowRightLong className="link-icon" />
                 </a>
               </div>
               <div className="contact__cards--talk-content-item">
@@ -43,27 +43,27 @@ const Contact = () => {
 
                 <h2>LinkedIn</h2>
                 <p>ayoub baslam</p>
-                <a href="#">
-                  Write me <FaArrowRightLong />
+                <a href="#"  target="__blank">
+                  Write me <FaArrowRightLong className="link-icon" />
                 </a>
               </div>
             </div>
           </div>
           <div className="contact__cards--write">
             <h2 className="contact__card-title">Write to Me!</h2>
-            <div className="contact__cards-content">
+            <div className="contact__cards--write-content">
               <form action="">
                 <div className="name-div block">
                   <label htmlFor="name">Name</label>
-                  <input type="text" id="name" className="name" />
+                  <input type="text" placeholder="Name" id="name" className="name" />
                 </div>
                 <div className="mail-dev block">
                   <label htmlFor="email">Mail</label>
-                  <input type="email" id="email" className="email" />
+                  <input type="email"  placeholder="Email address" id="email" className="email" />
                 </div>
                 <div className="texterea block">
                   <label htmlFor="project">Project</label>
-                  <textarea name="project" id="project"></textarea>
+                  <textarea placeholder="Write about your project..." name="project" id="project"></textarea>
                 </div>
 
                 <button className="button">Send message </button>
