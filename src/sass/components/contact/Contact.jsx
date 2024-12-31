@@ -7,7 +7,7 @@ const Contact = () => {
   const [formData, setFormData] = useState("");
 
   const handleChange = (e) => {
-    console.log(e.target.name);
+    console.log(formData);
 
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -91,7 +91,7 @@ const Contact = () => {
                     id="email"
                     className="email"
                     name="email"
-                    value={formData.name}
+                    value={formData.email}
                     onChange={handleChange}
                     required
                   />
@@ -102,7 +102,7 @@ const Contact = () => {
                     placeholder="Write about your project..."
                     name="project"
                     id="project"
-                    value={formData.name}
+                    value={formData.project}
                     onChange={handleChange}
                     required
                   ></textarea>
