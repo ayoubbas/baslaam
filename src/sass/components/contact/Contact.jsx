@@ -2,18 +2,54 @@ import React, { useState } from "react";
 import { BsFillEnvelopeAtFill } from "react-icons/bs";
 import { CiLinkedin } from "react-icons/ci";
 import { FaArrowRightLong, FaWhatsapp } from "react-icons/fa6";
-
+import Notification from "../notification/Notification";
 const Contact = () => {
-  const [formData, setFormData] = useState("");
+  const [formData, setFormData] = useState({});
+  const [notification, setNotification] = useState({
+    message: "sent message success!",
+    type: "succeess",
+    duration: 5000,
+    onClick: "true",
+  });
 
   const handleChange = (e) => {
-    console.log(formData);
-
     const { name, value } = e.target;
     setFormData((prevData) => ({
       ...prevData,
       [name]: value,
     }));
+    console.log(formData);
+  };
+
+  // handleSubmit
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const formDataEncoded = new URLSearchParams({
+      ...formData,
+      _captcha: "false", // Disable CAPTCHA
+    }).toString();
+
+    fetch("https://formsubmit.co/abardayou@gmail.com", {
+      method: "POST",
+      headers: {
+        "content-Type": "application/x-www-form-urlencoded",
+      },
+      body: formDataEncoded,
+    }).then((response) => {
+      if (response.ok) {
+        alert("Message sent successful");
+        console.log(response);
+        setNotification({
+          message: "sent message success!",
+          type: "succeess",
+          duration: 5000,
+          onClick: "true",
+        })
+        setFormData({ name: "", email: "", project: "" });
+      } else {
+        alert("Failed message sent noooooot successful");
+      }
+    });
   };
   return (
     <section className="contact section">
@@ -66,10 +102,8 @@ const Contact = () => {
           <div className="contact__cards--write">
             <h2 className="contact__card-title">Write to Me!</h2>
             <div className="contact__cards--write-content">
-              <form
-                action="https://formsubmit.co/abardayou@gmail.com"
-                method="POST"
-              >
+              <form onSubmit={handleSubmit}>
+                {/* foooooooooooooorm */}
                 <div className="name-div block">
                   <label htmlFor="name">Name</label>
                   <input
@@ -107,15 +141,15 @@ const Contact = () => {
                     required
                   ></textarea>
                 </div>
-
                 <button type="submit" className="button">
-                  Send message{" "}
+                  Send message
                 </button>
               </form>
             </div>
           </div>
         </div>
       </div>
+      <Notification notification={notification} />
     </section>
   );
 };
