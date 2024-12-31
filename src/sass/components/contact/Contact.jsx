@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { BsFillEnvelopeAtFill } from "react-icons/bs";
 import { CiLinkedin } from "react-icons/ci";
 import { FaArrowRightLong, FaWhatsapp } from "react-icons/fa6";
 
 const Contact = () => {
+  const [formData, setFormData] = useState("");
+
+  const handleChange = (e) => {
+    console.log(e.target.name);
+
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
   return (
     <section className="contact section">
       <div className="container">
@@ -33,7 +44,10 @@ const Contact = () => {
 
                 <h2>Whatsapp</h2>
                 <p>0672397065</p>
-                <a  target="__blank" href="https://api.whatsapp.com/send?phone=+212672397065&text=Hello,%20more%20information">
+                <a
+                  target="__blank"
+                  href="https://api.whatsapp.com/send?phone=+212672397065&text=Hello,%20more%20information"
+                >
                   Write me <FaArrowRightLong className="link-icon" />
                 </a>
               </div>
@@ -43,7 +57,7 @@ const Contact = () => {
 
                 <h2>LinkedIn</h2>
                 <p>ayoub baslam</p>
-                <a href="#"  target="__blank">
+                <a href="#" target="__blank">
                   Write me <FaArrowRightLong className="link-icon" />
                 </a>
               </div>
@@ -52,21 +66,51 @@ const Contact = () => {
           <div className="contact__cards--write">
             <h2 className="contact__card-title">Write to Me!</h2>
             <div className="contact__cards--write-content">
-              <form action="">
+              <form
+                action="https://formsubmit.co/abardayou@gmail.com"
+                method="POST"
+              >
                 <div className="name-div block">
                   <label htmlFor="name">Name</label>
-                  <input type="text" placeholder="Name" id="name" className="name" />
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    id="name"
+                    className="name"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
+                  />
                 </div>
                 <div className="mail-dev block">
                   <label htmlFor="email">Mail</label>
-                  <input type="email"  placeholder="Email address" id="email" className="email" />
+                  <input
+                    type="email"
+                    placeholder="Email address"
+                    id="email"
+                    className="email"
+                    name="email"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
+                  />
                 </div>
                 <div className="texterea block">
                   <label htmlFor="project">Project</label>
-                  <textarea placeholder="Write about your project..." name="project" id="project"></textarea>
+                  <textarea
+                    placeholder="Write about your project..."
+                    name="project"
+                    id="project"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
+                  ></textarea>
                 </div>
 
-                <button className="button">Send message </button>
+                <button type="submit" className="button">
+                  Send message{" "}
+                </button>
               </form>
             </div>
           </div>

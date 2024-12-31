@@ -1,9 +1,9 @@
 import React from "react";
 import { FaDribbble, FaGithub, FaInstagram } from "react-icons/fa";
 
-const Social = () => {
+const Social = ({row}) => {
   return (
-    <div className="home__social">
+    <div className={`home__social ${row}`}>
       <a
         className="home__social-1"
         href="http://www.instagram.com/"

@@ -7,6 +7,7 @@ import Services from "./sass/components/services/Services";
 import Portfolio from "./sass/components/portfolio/Portfolio";
 import Testemotional from "./sass/components/testemotional/Testemotional";
 import Contact from "./sass/components/contact/Contact";
+import Footer from "./sass/components/footer/Footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Portfolio />
         <Testemotional/>
         <Contact />
+        <Footer />
       </main>
     </div>
   );
