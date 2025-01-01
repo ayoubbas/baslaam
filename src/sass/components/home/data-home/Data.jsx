@@ -6,7 +6,7 @@ const Data = () => {
   return (
     <div className="home-data">
       <h1 className="home-data__name">
-        Ayoub Baslam
+        Hello, I'm Ayoub
         <svg
           width="36"
           height="36"
@@ -57,10 +57,13 @@ const Data = () => {
           ></path>
         </svg>
       </h1>
-      <h3 className="home-data__education">Reactjs developer</h3>
+      <h3 className="home-data__education">
+        A Self-Taught Front-End Developer
+      </h3>
       <p className="home-data__description">
-        I'm creative Develeper,I learn programming with self learning and I'm very passionate and
-        dedicated to my work.
+        A self-taught front-end developer passionate about crafting modern,
+        responsive, and user-friendly web applications with{" "}
+        <strong>ReactJS</strong>.
       </p>
       <a href="#contact" className="button home-data__button">
         <span>Say Hello</span>
