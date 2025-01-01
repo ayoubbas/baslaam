@@ -1,39 +1,6 @@
 import React, { useState } from "react";
-import work1 from "../../../assets/work1.jpg";
-import work2 from "../../../assets/work2.jpg";
-import work3 from "../../../assets/work3.jpg";
-import work4 from "../../../assets/work4.jpg";
-const projects = [
-  {
-    id: 1,
-    title: "Portfolio Website",
-    category: "UI/UX",
-    tags: ["React", "CSS"],
-    image: work1,
-  },
-  {
-    id: 2,
-    title: "E-commerce Platform",
-    category: "Web Apps",
-    tags: ["React", "API"],
-    image: work2,
-  },
-  {
-    id: 3,
-    title: "Admin Dashboard",
-    category: "Web Apps",
-    tags: ["Vue", "TailwindCSS"],
-    image: work3,
-  },
+import projects from "../../../assets/data";
 
-  {
-    id: 4,
-    title: "Blog CMS",
-    category: "UI/UX",
-    tags: ["Next.js", "SEO"],
-    image: work4,
-  },
-];
 
 const categories = ["All", "UI/UX", "Web Apps", "E-commerce"];
 

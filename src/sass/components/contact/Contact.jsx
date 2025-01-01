@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { BsFillEnvelopeAtFill } from "react-icons/bs";
 import { CiLinkedin } from "react-icons/ci";
 import { FaArrowRightLong, FaWhatsapp } from "react-icons/fa6";
@@ -6,12 +6,28 @@ import Notification from "../notification/Notification";
 const Contact = () => {
   const [formData, setFormData] = useState({});
   const [notification, setNotification] = useState({
-    message: "sent message success!",
-    type: "succeess",
-    duration: 5000,
-    onClick: "true",
+    message: "",
+    type: "",
+    active: "hide",
   });
 
+  const handleCloseNotification = () => {
+    setNotification((prevData) => ({ ...prevData, active: "hide" }));
+  };
+  useEffect(() => {
+    setNotification((prevData) => ({
+      ...prevData,
+      message: "",
+      type: "",
+    }));
+  }, []);
+  console.log(notification.active);
+  
+  if (notification.active === "active") {
+    setTimeout(() => {
+      handleCloseNotification();
+    }, 5000);
+  }
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -37,17 +53,19 @@ const Contact = () => {
       body: formDataEncoded,
     }).then((response) => {
       if (response.ok) {
-        alert("Message sent successful");
-        console.log(response);
         setNotification({
           message: "sent message success!",
-          type: "succeess",
-          duration: 5000,
-          onClick: "true",
-        })
+          type: "success",
+          active:"active",
+        });
         setFormData({ name: "", email: "", project: "" });
       } else {
-        alert("Failed message sent noooooot successful");
+        setNotification({
+          message: "Failed message sent noooooot successful!",
+          type: "error",
+          active:"active"
+        });
+
       }
     });
   };

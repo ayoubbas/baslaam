@@ -1,5 +1,9 @@
 import React from "react";
 import { FaUser, FaFolder, FaHeadset } from "react-icons/fa";
+import projects from "../../../../assets/data";
+
+console.log(projects);
+
 const About = () => {
   return (
     <section id="about" className="about section">
@@ -23,7 +27,7 @@ const About = () => {
               <div className="about__content--data-stats-stat">
                 <FaFolder className="about-icon" />
                 <h3 className="about__content--data-stats-stat-title">Completed</h3>
-                <p className="about__content--data-stats-stat-subtitle">48 + Projects</p>
+                <p className="about__content--data-stats-stat-subtitle">{projects.length} + Projects</p>
               </div>
               {/* stat */}
               <div className="about__content--data-stats-stat">

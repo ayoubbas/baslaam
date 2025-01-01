@@ -57,9 +57,9 @@ const Data = () => {
           ></path>
         </svg>
       </h1>
-      <h3 className="home-data__education">Visual Designer</h3>
+      <h3 className="home-data__education">Reactjs developer</h3>
       <p className="home-data__description">
-        I'm creative designer based in New York, and I'm very passionate and
+        I'm creative Develeper,I learn programming with self learning and I'm very passionate and
         dedicated to my work.
       </p>
       <a href="#contact" className="button home-data__button">
