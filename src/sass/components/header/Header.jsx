@@ -46,9 +46,9 @@ const Header = () => {
                 </a>
               </li>
               <li onClick={() => setActive(false)} className="nav__list--item">
-                <a href="#portfolio" className="nav__list--link">
+                <a href="#projects" className="nav__list--link">
                   <CiImageOn className="nav__list--icon" />
-                  Portfolio
+                  Projects
                 </a>
               </li>
               <li onClick={() => setActive(false)} className="nav__list--item">

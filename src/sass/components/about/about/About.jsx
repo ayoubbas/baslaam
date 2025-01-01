@@ -20,20 +20,32 @@ const About = () => {
               {/* stat */}
               <div className="about__content--data-stats-stat">
                 <FaUser className="about-icon" />
-                <h3 className="about__content--data-stats-stat-title">Experience</h3>
-                <p className="about__content--data-stats-stat-subtitle">2 Years Working</p>
+                <h3 className="about__content--data-stats-stat-title">
+                  Experience
+                </h3>
+                <p className="about__content--data-stats-stat-subtitle">
+                  3 Years learning
+                </p>
               </div>
               {/* stat */}
               <div className="about__content--data-stats-stat">
                 <FaFolder className="about-icon" />
-                <h3 className="about__content--data-stats-stat-title">Completed</h3>
-                <p className="about__content--data-stats-stat-subtitle">{projects.length} + Projects</p>
+                <h3 className="about__content--data-stats-stat-title">
+                  Completed
+                </h3>
+                <p className="about__content--data-stats-stat-subtitle">
+                  {projects.length} + Projects
+                </p>
               </div>
               {/* stat */}
               <div className="about__content--data-stats-stat">
                 <FaHeadset className="about-icon" />
-                <h3 className="about__content--data-stats-stat-title">Support</h3>
-                <p className="about__content--data-stats-stat-subtitle">Online 24/7</p>
+                <h3 className="about__content--data-stats-stat-title">
+                  Support
+                </h3>
+                <p className="about__content--data-stats-stat-subtitle">
+                  Online 24/7
+                </p>
               </div>
             </div>
 
@@ -44,7 +56,11 @@ const About = () => {
               with the projects carried out.
             </p>
             {/* download cvv */}
-            <a href={require("../../../../assets/Baslaam-Cv.pdf")} download className="button">
+            <a
+              href={require("../../../../assets/Baslaam-Cv.pdf")}
+              download
+              className="button"
+            >
               Download my cv
             </a>
           </div>

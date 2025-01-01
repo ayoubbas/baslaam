@@ -70,7 +70,7 @@ const Skills = () => {
                   <GrValidate className="skills-icon" />
                   <div className="skill-title">
                     <p className="skill-name">PHP</p>
-                    <p className="skill-level">Intermediate</p>
+                    <p className="skill-level">Knowledge</p>
                   </div>
                 </li>
                 <li className="skills-item">
@@ -85,7 +85,7 @@ const Skills = () => {
                   <GrValidate className="skills-icon" />
                   <div className="skill-title">
                     <p className="skill-name">Python</p>
-                    <p className="skill-level">Intermediate</p>
+                    <p className="skill-level">Knowledge</p>
                   </div>
                 </li>
               </ul>
@@ -94,14 +94,14 @@ const Skills = () => {
                   <GrValidate className="skills-icon" />
                   <div className="skill-title">
                     <p className="skill-name">MySQL</p>
-                    <p className="skill-level">Intermediate</p>
+                    <p className="skill-level">Knowledge</p>
                   </div>
                 </li>
                 <li className="skills-item">
                   <GrValidate className="skills-icon" />
                   <div className="skill-title">
                     <p className="skill-name">Firebase</p>
-                    <p className="skill-level">Intermediate</p>
+                    <p className="skill-level">Knowledge</p>
                   </div>
                 </li>
                 {/* <li className="skills-item">

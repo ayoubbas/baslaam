@@ -13,7 +13,7 @@ const ProjectSection = () => {
       : projects.filter((project) => project.category === activeCategory);
 
   return (
-    <div className="projects">
+    <div className="projects" id="projects">
       <div className="container">
         <div className="title">
           <h2 className="section__title">My Projects</h2>

@@ -70,7 +70,7 @@ const Contact = () => {
     });
   };
   return (
-    <section className="contact section">
+    <section className="contact section" id="contact">
       <div className="container">
         <div className="title">
           <h1 className="section__title">Contact Me</h1>
